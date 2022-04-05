@@ -1,0 +1,7 @@
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+export PATH=/usr/bin:$PATH
+export PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+export PATH=/usr/local/mysql/bin:$PATH
+export PATH="/home/paul/depots/websealevel/automation:$PATH"
+#Repertoire qui stocke les scripts d'automatisation commun à tous les projets
+export ROOT_SCRIPTS="/home/paul/depots/websealevel/automation"
