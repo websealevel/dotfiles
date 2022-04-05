@@ -78,5 +78,21 @@
 			"*/"
 		],
 		"description": "php docblock for classe members"
+	},
+	"wpph": {
+		"prefix": "wpph",
+		"body": [
+			"/**",
+			"* Plugin Name:       $0",
+			"* Plugin URI:        https://websealevel.com",
+			"* Description:       ",
+			"* Version:           1.0",
+			"* Requires at least: 5.9.2",
+			"* Requires PHP:      8.0",
+			"* Author:            Websealevel",
+			"* Text Domain:       websealevel",
+			"*/"
+		],
+		"description": "wordpress plugin header"
 	}
 }
