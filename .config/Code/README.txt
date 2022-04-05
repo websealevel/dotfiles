@@ -1,0 +1,1 @@
+# Configuration custom de VSCODE

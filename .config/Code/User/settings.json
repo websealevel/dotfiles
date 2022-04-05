@@ -1,0 +1,12 @@
+{
+    "workbench.colorTheme": "Monokai Light",
+    "editor.minimap.enabled": false,
+    "git.confirmSync": false,
+    "[dockerfile]": {
+        "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+    },
+    "intelephense.completion.maxItems": 50,
+    "intelephense.environment.phpVersion": "8",
+    "editor.wordWrap": "on",
+
+}
