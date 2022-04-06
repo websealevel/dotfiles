@@ -16,9 +16,7 @@
 	"php": {
 		"prefix": "php",
 		"body": [
-			"<?php",
-			"$0",
-			"?>"
+			"<?php $0 ?>"
 		],
 		"description": "php tag"
 	},
@@ -30,19 +28,18 @@
 		],
 		"description": "php only one tag"
 	},
-
 	"pd": {
 		"prefix": "pd",
 		"body": [
-			"/**",
-			"* Summary $0",
-			"* Description",
-			"* @see",
-			"* @link",
-			"* @global",
-			"* @param type $var Optional. Description. Default. ",
-			"* @return type Description",
-			"*/"
+			" /**",
+			" * Summary $0",
+			" * Description",
+			" * @see",
+			" * @link",
+			" * @global",
+			" * @param type $var Optional. Description. Default. ",
+			" * @return type Description",
+			" */"
 		],
 		"description": "php general docklock"
 	},
@@ -50,11 +47,13 @@
 		"prefix": "pdh",
 		"body": [
 			"/**",
-			"* Summary $0",
-			"* Description:",
-			"* @link: ",
-			"* @package: ",
-			"*/"
+			" * Summary $0",
+			" * Description:",
+			" *",
+			" * @link",
+			" *",
+			" * @package wsl ",
+			" */"
 		],
 		"description": "php file header docklock"
 	},
@@ -79,7 +78,6 @@
 		],
 		"description": "php docblock for classe members"
 	},
-
 	"wpph": {
 		"prefix": "wpph",
 		"body": [

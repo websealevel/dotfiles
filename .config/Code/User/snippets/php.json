@@ -16,9 +16,7 @@
 	"php": {
 		"prefix": "php",
 		"body": [
-			"<?php",
-			"$0",
-			"?>"
+			"<?php $0 ?>"
 		],
 		"description": "php tag"
 	},
@@ -50,11 +48,13 @@
 		"prefix": "pdh",
 		"body": [
 			"/**",
-			"* Summary $0",
-			"* Description:",
-			"* @link: ",
-			"* @package: ",
-			"*/"
+			" * Summary $0",
+			" * Description:",
+			" *",
+			" * @link",
+			" *",
+			" * @package wsl ",
+			" */"
 		],
 		"description": "php file header docklock"
 	},
@@ -94,5 +94,12 @@
 			"*/"
 		],
 		"description": "wordpress plugin header"
+	},
+	"wpe":{
+		"prefix": "wpe",
+		"body": [
+			"esc_html_e($0,);",
+		],
+		"description": "wordpress esc_html_e"
 	}
 }
