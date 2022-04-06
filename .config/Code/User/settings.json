@@ -1,5 +1,5 @@
 {
-    "workbench.colorTheme": "Monokai Light",
+    "workbench.colorTheme": "GitHub Light",
     "editor.minimap.enabled": false,
     "git.confirmSync": false,
     "[dockerfile]": {
@@ -8,5 +8,14 @@
     "intelephense.completion.maxItems": 50,
     "intelephense.environment.phpVersion": "8",
     "editor.wordWrap": "on",
-
+    "phpcs.executablePath": "vendor/squizlabs/php_codesniffer/bin/phpcs",
+    "phpcs.standard": "Wordpress",
+    "phpcbf.executablePath": "vendor/squizlabs/php_codesniffer/bin/phpcbf",
+    "phpcbf.standard": "WordPress",
+    "phpcbf.documentFormattingProvider": true,
+    "phpcbf.onsave": true,
+    "phpcbf.enable": true,
+    "[php]": {
+        "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
+    },
 }
