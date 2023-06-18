@@ -5,8 +5,13 @@
     "[dockerfile]": {
         "editor.defaultFormatter": "ms-azuretools.vscode-docker"
     },
+    "files.watcherExclude": {
+        "**/.git/objects/**": true,
+        "**/.git/subtree-cache/**": true,
+        "**/node_modules/*/**": true,
+        "**/.hg/store/**": true
+    },
     "intelephense.completion.maxItems": 50,
-    "intelephense.environment.phpVersion": "8",
     "intelephense.stubs": [
         "apache",
         "bcmath",
@@ -85,20 +90,25 @@
         "acf-stubs"
     ],
     "editor.wordWrap": "on",
-    "phpcs.executablePath": "vendor/bin/phpcs",
-    "phpcs.standard": "Wordpress",
-    "phpcbf.executablePath": "./vendor/bin/phpcbf",
-    "phpcbf.standard": "WordPress",
+    "phpcs.errorSeverity": 6,
+    "phpcs.lintOnOpen": false,
+    "phpcs.lintOnType": false,
+    "phpcs.composerJsonPath": "/home/paul/.config/composer/vendor/squizlabs/php_codesniffer/composer.json",
+    "phpcs.standard": "PSR12",
+    // "phpcs.executablePath": "./vendor/bin/phpcs",
+    // "phpcbf.executablePath": "./vendor/bin/phpcbf",
+    "phpcs.executablePath": "/home/paul/.config/composer/vendor/bin/phpcs",
+    "phpcbf.executablePath": "/home/paul/.config/composer/vendor/bin/phpcbf",
+    "phpcbf.enable": true,
+    "phpcbf.standard": "PSR12",
     "phpcbf.documentFormattingProvider": true,
     "phpcbf.onsave": true,
-    "phpcbf.enable": true,
     "[php]": {
         "editor.defaultFormatter": "bmewburn.vscode-intelephense-client"
+        // "editor.defaultFormatter": "persoderlind.vscode-phpcbf"
     },
-    "window.zoomLevel": 1,
-    "workbench.editor.enablePreview": false,
-    "php.suggest.basic": false,
-    "php.validate.enable": false,
+    "php.suggest.basic": true,
+    "php.validate.enable": true,
     "emmet.excludeLanguages": [
         "markdown",
     ],
@@ -161,4 +171,39 @@
     "emmet.includeLanguages": {
         "php": "html",
     },
+    "php-cs-fixer.executablePath": "${extensionPath}/php-cs-fixer.phar",
+    "explorer.experimental.fileNesting.enabled": true,
+    "workbench.sideBar.location": "right",
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "thunder-client.codeSnippetLanguage": "curl",
+    "[properties]": {
+        "editor.defaultFormatter": "lkrms.inifmt"
+    },
+    "[nginx]": {
+        "editor.defaultFormatter": "ahmadalli.vscode-nginx-conf"
+    },
+    "redhat.telemetry.enabled": true,
+    "[xml]": {
+        "editor.defaultFormatter": "redhat.vscode-xml"
+    },
+    "phpcs.trace.server": "verbose",
+    "settingsSync.keybindingsPerPlatform": false,
+    "html.format.indentInnerHtml": true,
+    "html.format.indentHandlebars": true,
+    "html.format.contentUnformatted": "",
+    "settingsSync.ignoredExtensions": [
+        "shevaua.phpcs"
+    ],
+    "git.enableSmartCommit": true,
+    "symfony.code.snippets.hideWelcomeMessage": true,
+    "symfony-vscode.showConsoleErrors": false,
+    "symfony-vscode.servicesFilters": {
+        "[a-f0-9]{64}_[0-9]+": "id",
+        "~": "id",
+        "instanceof\\.": "id"
+    },
+    "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "git.openRepositoryInParentFolders": "never",
+    "window.zoomLevel": 1,
 }
