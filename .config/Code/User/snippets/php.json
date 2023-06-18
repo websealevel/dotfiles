@@ -114,4 +114,13 @@
 		],
 		"description": "wordpress loop"
 	},
+	"remark": {
+		"prefix": "remark",
+		"body": [
+			"/**",
+			" * Remarque @pschuhmacher: $0",
+			" */"
+		],
+		"description": "commentaire utilisé pour indiquer une correction (utilisé pour commenter code source des examens)"
+	},
 }
