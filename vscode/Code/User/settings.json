@@ -1,0 +1,244 @@
+{
+  // == GLOBAL ==
+
+  "window.zoomLevel": 0,
+  "window.newWindowProfile": "Default",
+
+  "workbench.colorTheme": "GitHub Light",
+  "workbench.startupEditor": "none",
+  "workbench.editor.splitInGroupLayout": "vertical",
+  "workbench.preferredLightColorTheme": "GitHub Light",
+  "workbench.activityBar.location": "bottom",
+  "workbench.secondarySideBar.defaultVisibility": "hidden",
+  "workbench.sideBar.location": "right",
+
+  "explorer.fileNesting.enabled": false,
+  "explorer.excludeGitIgnore": false,
+  "explorer.confirmDelete": false,
+
+  "editor.fontSize": 16,
+  "editor.minimap.enabled": false,
+  "editor.insertSpaces": true,
+  "editor.tabSize": 4,
+  "editor.stickyScroll.enabled": false,
+  "editor.fontFamily": "'DejaVu Sans Mono', 'monospace', monospace",
+  "editor.renderControlCharacters": false,
+  "editor.wordWrap": "on",
+  "editor.renderWhitespace": "none",
+
+  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.stickyScroll.enabled": false,
+
+  "extensions.ignoreRecommendations": true,
+
+  "zenMode.hideLineNumbers": false,
+  "keyboard.dispatch": "keyCode",
+
+  "redhat.telemetry.enabled": true,
+  "telemetry.telemetryLevel": "off",
+
+  // == EMMET ==
+  "emmet.includeLanguages": {
+    "php": "html",
+    "twig": "html",
+    "markdown": "html"
+  },
+  "emmet.excludeLanguages": [""],
+
+  // == CONFIG / FORMAT ==
+
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "html.format.indentInnerHtml": true,
+  "html.format.indentHandlebars": true,
+  "html.format.contentUnformatted": "",
+  "[xml]": {
+    "editor.defaultFormatter": "redhat.vscode-xml"
+  },
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false,
+    "editor.defaultFormatter": "DavidAnson.vscode-markdownlint"
+  },
+  "[php]": {
+    // phpcbf
+    "editor.defaultFormatter": "valeryanm.vscode-phpsab"
+  },
+  "php.suggest.basic": true,
+  "php.validate.enable": true,
+  "phpsab.standard": "",
+  "phpsab.debug": false,
+
+  "[sql]": {
+    "editor.defaultFormatter": "adpyke.vscode-sql-formatter"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "javascript.updateImportsOnFileMove.enabled": "always",
+
+  "[jsonc]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[json]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "vscode.css-language-features"
+  },
+  "[twig]": {
+    "editor.defaultFormatter": "mblode.twig-language-2"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[properties]": {
+    "editor.defaultFormatter": "lkrms.inifmt"
+  },
+
+  // === MARKDOWN ===
+
+  "markdown.occurrencesHighlight.enabled": true,
+  "markdown.preview.typographer": true,
+  "markdown.styles": ["style.css"],
+
+  "git.confirmSync": false,
+  "files.watcherExclude": {
+    "**/.git/objects/**": true,
+    "**/.git/subtree-cache/**": true,
+    "**/node_modules/*/**": true,
+    "**/.hg/store/**": true
+  },
+
+  // == GIT ==
+  "git.enableSmartCommit": true,
+  "git.openRepositoryInParentFolders": "never",
+
+  // == PHP : INTELEPHENSE, PHPCodeSniffer(phpcs, phpcbf)  ===
+  "intelephense.completion.maxItems": 50,
+  "intelephense.stubs": [
+    "apache",
+    "bcmath",
+    "bz2",
+    "calendar",
+    "com_dotnet",
+    "Core",
+    "ctype",
+    "curl",
+    "date",
+    "dba",
+    "dom",
+    "enchant",
+    "exif",
+    "FFI",
+    "fileinfo",
+    "filter",
+    "fpm",
+    "ftp",
+    "gd",
+    "gettext",
+    "gmp",
+    "hash",
+    "iconv",
+    "imap",
+    "intl",
+    "json",
+    "ldap",
+    "libxml",
+    "mbstring",
+    "meta",
+    "mysqli",
+    "oci8",
+    "odbc",
+    "openssl",
+    "pcntl",
+    "pcre",
+    "PDO",
+    "pgsql",
+    "Phar",
+    "posix",
+    "pspell",
+    "readline",
+    "Reflection",
+    "session",
+    "shmop",
+    "SimpleXML",
+    "snmp",
+    "soap",
+    "sockets",
+    "sodium",
+    "SPL",
+    "sqlite3",
+    "standard",
+    "superglobals",
+    "sysvmsg",
+    "sysvsem",
+    "sysvshm",
+    "tidy",
+    "tokenizer",
+    "xml",
+    "xmlreader",
+    "xmlrpc",
+    "xmlwriter",
+    "xsl",
+    "Zend OPcache",
+    "zip",
+    "zlib",
+    "wordpress"
+  ],
+  "intelephense.environment.phpVersion": "8.4",
+  "intelephense.environment.includePaths": ["acf-stubs"],
+  "phpcs.errorSeverity": 5,
+  "phpcs.lintOnOpen": false,
+  "phpcs.lintOnType": false,
+  "phpcs.composerJsonPath": "/home/paul/.config/composer/vendor/squizlabs/php_codesniffer/composer.json",
+  "phpcs.standard": "PSR12",
+  "phpcs.executablePath": "/home/paul/.config/composer/vendor/bin/phpcs",
+  "phpcbf.executablePath": "/home/paul/.config/composer/vendor/bin/phpcbf",
+  "phpcbf.enable": true,
+  "phpcbf.standard": "PSR12",
+  "phpcbf.documentFormattingProvider": true,
+  "phpcbf.onsave": false,
+  "phpsab.executablePathCBF": "",
+  "phpsab.executablePathCS": "",
+  //Twig language 2 recommandation
+  // "files.associations": {
+  //     "*.html": "twig"
+  // },
+
+  "settingsSync.keybindingsPerPlatform": false,
+  "settingsSync.ignoredExtensions": ["shevaua.phpcs"],
+
+  // == SPELL CHECKING (ext)==
+  "cSpell.numSuggestions": 3,
+  "cSpell.checkOnlyEnabledFileTypes": true,
+  "cSpell.enableFiletypes": ["*", "!json", "!log"],
+  "cSpell.enabledFileTypes": {
+    "md": true,
+    "markdown": true
+  },
+  "cSpell.dictionaryDefinitions": [],
+  "cSpell.language": "fr,en",
+  "cSpell.userWords": [
+    "gameplay",
+    "l'auditabilité",
+    "refactorée",
+    "refactorer",
+    "requêter",
+    "Symfony"
+  ],
+
+  // == CONTAINERS ==
+  "docker.commands.composeUp": [
+    {
+      "label": "Compose Up",
+      "template": "${composeCommand} ${configurationFile} up ${detached} ${build}"
+    }
+  ],
+  "containers.commands.composeUp": [
+    {
+      "label": "Compose Up",
+      "template": "${composeCommand} ${configurationFile} up ${detached} ${build}"
+    }
+  ]
+}
